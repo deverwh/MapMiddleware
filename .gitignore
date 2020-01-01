@@ -43,6 +43,9 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
+# Qt directory
+GeneratedFiles/
+
 # DNX
 project.lock.json
 artifacts/
