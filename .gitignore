@@ -257,3 +257,6 @@ paket-files/
 .idea/
 *.sln.iml
 temp
+/MapMiddleware/doc
+/MapMiddleware/MapMiddleware/MapAdapter/GuoYaoMapAdapter
+/MapMiddleware/MapMiddleware/MapAdapter/CETCMapAdapter

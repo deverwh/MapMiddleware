@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{d22cfbbf-aa7f-4345-a5a1-3454d509f235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{7b1b2b1f-5d27-4c62-93a3-d90f9bb3a3ff}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{ce19a2af-e737-4e4b-ad67-ccd388f2b3b7}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="StructDefine">
+      <UniqueIdentifier>{2bfe2988-2a27-4a2b-83ea-d6af0c1697ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\SysEnumSet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CTurnPageBar.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\CMenuDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\CMessageIDDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\ConfigDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\InfoCode.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\MsgDefine.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\MsgString.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\XmlNodeDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\PluginNameDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\MessageTopicDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CXmlFileParse.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\CDBTableNameDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDefine\SystemIDDef.h">
+      <Filter>StructDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\AbstractObject.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Singleton.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\CTurnPageBar.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CTurnPageBar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CTurnPageBar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\SysEnumSet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CXmlFileParse.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CSoftWareIDManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CSoftWareIDManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CSoftWareIDManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Common\CTurnPageBar.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Common\CTurnPageBar.ui">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Common\CSoftWareIDManager.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

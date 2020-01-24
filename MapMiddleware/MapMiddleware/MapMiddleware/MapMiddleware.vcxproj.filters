@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{c3f87044-0f14-4a42-8766-3ac08a55704f}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{0dc03e80-0702-4871-9e6d-2d801ea1eaa0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{324e6cd6-d2ad-4827-8539-051091a1892d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{59be2f51-9b5a-4f30-9657-72dbeb047b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\core">
+      <UniqueIdentifier>{ca7a2c12-19e5-4715-b882-ae01a90f139b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\core\MapItem">
+      <UniqueIdentifier>{144f663c-013d-4a58-8741-077c2cca06b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{a9356bf8-0995-4139-99e1-c905226aa994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{509ef2a5-77b6-4c64-9f3a-59def2e9c7c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\MapItem">
+      <UniqueIdentifier>{f62d160d-9db2-489b-8541-d8822594e10d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Interface\Core\AbstractMapHandle.h">
+      <Filter>interface\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Ui\LongLatLabel.h">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Ui\LongLatLabel.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Include\Core\MapHandle.h">
+      <Filter>Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Include\Core\MapItem\MapItem.h">
+      <Filter>Core\MapItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MapMiddleware.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Ui\MapTool.h">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Ui\MapTool.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Core\MapItem\PointMapItem.cpp">
+      <Filter>Core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\MapMiddlewareConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapItem\MapItem.cpp">
+      <Filter>Core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MapHandle.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MapHandle.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\AbstractMapHandle.cpp">
+      <Filter>interface\core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AbstractMapHandle.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AbstractMapHandle.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Ui\LongLatLabel.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LongLatLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LongLatLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\AbstractMapLayer.cpp">
+      <Filter>interface\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapItem\AbstractMapItem.cpp">
+      <Filter>interface\core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapItem\AbstractPointMapItem.cpp">
+      <Filter>interface\core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapFactoryLoader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapHandle.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapLayer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_MapMiddleware.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Ui\MapTool.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MapTool.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MapTool.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapItem\LineMapItem.cpp">
+      <Filter>Core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\MapItem\AbstractLineMapItem.cpp">
+      <Filter>interface\core\MapItem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config\MapMiddlewareConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Core\IMapFactory.h">
+      <Filter>interface\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Interface_Global.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LongLatLabel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Core\MapItem\AbstractMapItem.h">
+      <Filter>interface\core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Core\MapItem\AbstractPointMapItem.h">
+      <Filter>interface\core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Core\AbstractMapLayer.h">
+      <Filter>interface\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\MapFactoryLoader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Map_Global.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\MapLayer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\MapItem\PointMapItem.h">
+      <Filter>Core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MapTool.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Define.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\MapItem\LineMapItem.h">
+      <Filter>Core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Core\MapItem\AbstractLineMapItem.h">
+      <Filter>interface\core\MapItem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
