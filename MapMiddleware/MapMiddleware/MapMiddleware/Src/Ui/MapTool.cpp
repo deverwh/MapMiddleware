@@ -4,14 +4,13 @@
 #include <QPushButton>
 
 MapTool::MapTool(AbstractMapHandle *mapHandle /* = Q_NULLPTR */)
-: QWidget(mapHandle)
+	: m_mapHandle(mapHandle)
 {
 	ui = new Ui::MapTool();
 	ui->setupUi(this);
-	this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
+	this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
 	this->setAttribute(Qt::WA_TranslucentBackground, true);
 	ui->arrowPushButton->setStyleSheet("border-image:url(:/images/btn_hover.png);");
-	m_mapHandle = mapHandle;
 
 	connect(m_mapHandle, &AbstractMapHandle::mapStateChanged, this, [&](MapHandleState::State state) 
 	{

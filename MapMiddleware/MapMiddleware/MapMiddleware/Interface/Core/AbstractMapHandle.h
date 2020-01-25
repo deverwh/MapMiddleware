@@ -18,6 +18,7 @@
 #include <QWidget>
 #include <QMap>
 
+class QTimer;
 class LongLatLabel;
 class MapTool;
 class AbstractMapLayer;
@@ -50,14 +51,16 @@ signals:
 	void mouseMoved(qreal longitude, qreal latitude);
 	void mouseReleased(qreal longitude, qreal latitude, Qt::MouseButton button);
 
+
 protected:
-	virtual void paintEvent(QPaintEvent *) override;
-	virtual void mousePressEvent(QMouseEvent *) override;
-	virtual void mouseMoveEvent(QMouseEvent *) override;
-	virtual void mouseReleaseEvent(QMouseEvent *) override;
-	virtual void showEvent(QShowEvent *) override;
-	virtual void hideEvent(QHideEvent *) override;
+	virtual void showEvent(QShowEvent *);
+	virtual void hideEvent(QHideEvent *);
+
 private:
+	QTimer					*	m_freshTimer	= nullptr;				// 刷新定时器，主要用于更新浮窗位置
 	LongLatLabel			*	m_longLatLabel	= nullptr;				// 经纬度显示标签
 	MapTool					*	m_mapTool		= nullptr;				// 地图工具栏
+
+private slots:
+	void onFreshTimerTimeOut();
 };

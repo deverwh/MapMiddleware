@@ -11,6 +11,7 @@ BaiduMapHandle::BaiduMapHandle(QWidget *parent)
 	layout->setMargin(0);
 	layout->addWidget(m_baiduMap);
 	this->setLayout(layout);
+	this->setMouseTracking(true);
 
 	connect(m_baiduMap, &BaiduMapView::signalMouseMoved, this, &AbstractMapHandle::mouseMoved);
 }

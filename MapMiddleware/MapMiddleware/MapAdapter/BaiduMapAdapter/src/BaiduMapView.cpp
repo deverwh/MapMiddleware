@@ -15,6 +15,8 @@ BaiduMapView::BaiduMapView(QWidget *parent)
 	QUrl url(strMapPath);
 	this->page()->load(url);
 	this->triggerPageAction(QWebEnginePage::Reload, true);
+
+	this->setMouseTracking(true);
 }
 
 BaiduMapView::~BaiduMapView()
@@ -27,3 +29,4 @@ void BaiduMapView::mouseMoved(qreal longitude, qreal latitude)
 {
 	emit signalMouseMoved(longitude, latitude);
 }
+

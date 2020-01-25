@@ -50,9 +50,6 @@ signals:
 	void mousePressed(qreal longitude, qreal latitude, Qt::MouseButton button);
 	void mouseReleased(qreal longitude, qreal latitude, Qt::MouseButton button);
 
-protected:
-	virtual void paintEvent(QPaintEvent *);
-
 private:
 	QMap<int, MapLayer *>		m_mapLayers;
 	MapHandleState::State		m_state		= MapHandleState::Arrow; // µØÍ¼×´Ì¬
