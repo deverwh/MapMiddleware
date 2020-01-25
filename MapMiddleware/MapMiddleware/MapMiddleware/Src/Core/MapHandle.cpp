@@ -15,6 +15,7 @@ MapHandle::MapHandle(QWidget *parent /* = nullptr */)
 	if (mapFactory)
 	{
 		d_ptr = mapFactory->createMapHandle();
+		d_ptr->setParent(this);
 		QHBoxLayout *layout = new QHBoxLayout(this);
 		layout->setMargin(0);
 		layout->addWidget(d_ptr);
@@ -73,4 +74,9 @@ void MapHandle::removeMapLayer(int mapLayerIndex)
 bool MapHandle::isValid() const
 {
 	return d_ptr != nullptr;
+}
+
+void MapHandle::paintEvent(QPaintEvent *event)
+{
+	QWidget::paintEvent(event);
 }

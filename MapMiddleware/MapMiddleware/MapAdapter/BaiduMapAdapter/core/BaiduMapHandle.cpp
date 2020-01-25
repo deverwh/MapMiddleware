@@ -11,6 +11,8 @@ BaiduMapHandle::BaiduMapHandle(QWidget *parent)
 	layout->setMargin(0);
 	layout->addWidget(m_baiduMap);
 	this->setLayout(layout);
+
+	connect(m_baiduMap, &BaiduMapView::signalMouseMoved, this, &AbstractMapHandle::mouseMoved);
 }
 
 BaiduMapHandle::~BaiduMapHandle()
@@ -37,24 +39,4 @@ void BaiduMapHandle::setMapState(MapHandleState::State state)
 {
 	AbstractMapHandle::setMapState(state);
 	// TODO
-}
-
-void BaiduMapHandle::resizeEvent(QResizeEvent *event)
-{
-	AbstractMapHandle::resizeEvent(event);
-}
-
-void BaiduMapHandle::wheelEvent(QWheelEvent *event)
-{
-	AbstractMapHandle::wheelEvent(event);
-}
-
-void BaiduMapHandle::mousePressEvent(QMouseEvent *event)
-{
-	AbstractMapHandle::mousePressEvent(event);
-}
-
-void BaiduMapHandle::mouseMoveEvent(QMouseEvent *event)
-{
-	AbstractMapHandle::mouseMoveEvent(event);
 }

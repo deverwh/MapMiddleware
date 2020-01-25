@@ -11,9 +11,16 @@ AbstractMapHandle::AbstractMapHandle(QWidget *parent /*= nullptr*/)
 
 	m_longLatLabel = new LongLatLabel(this);
 	m_mapTool = new MapTool(this);
+
+	this->installEventFilter(m_longLatLabel);
 	
 	// 默认是漫游状态
 	this->setMapState(MapHandleState::Roaming);
+
+	connect(this, &AbstractMapHandle::mouseMoved, this, [&](qreal longitude, qreal latitude)
+	{
+		m_longLatLabel->set(longitude, latitude);
+	});
 }
 
 AbstractMapHandle::~AbstractMapHandle()
@@ -56,8 +63,6 @@ void AbstractMapHandle::paintEvent(QPaintEvent *event)
 		// 窗口坐标转换为屏幕坐标
 		auto pos = mapToGlobal(this->pos());
 
-		
-		m_longLatLabel->move(pos.x() + this->width() - m_longLatLabel->width(), pos.y() + 2);  // 经纬度显示标签位置
 		m_mapTool->move(pos.x() + 8, pos.y() + 8);
 	}
 
@@ -126,14 +131,12 @@ void AbstractMapHandle::mouseReleaseEvent(QMouseEvent *event)
 
 void AbstractMapHandle::showEvent(QShowEvent *event)
 {
-	m_longLatLabel->show();
 	m_mapTool->show();
 	QWidget::showEvent(event);
 }
 
 void AbstractMapHandle::hideEvent(QHideEvent *event)
 {
-	m_longLatLabel->hide();
 	m_mapTool->hide();
 	QWidget::hideEvent(event);
 }

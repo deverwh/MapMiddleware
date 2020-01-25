@@ -37,12 +37,6 @@ public:
 	// ÉèÖÃµØÍ¼×´Ì¬
 	virtual void setMapState(MapHandleState::State state) override;
 
-protected:
-	virtual void resizeEvent(QResizeEvent *) override;
-	virtual void wheelEvent(QWheelEvent *) override;
-	virtual void mousePressEvent(QMouseEvent *) override;
-	virtual void mouseMoveEvent(QMouseEvent *) override;
-
 private:
 	BaiduMapView *	m_baiduMap = nullptr;
 };

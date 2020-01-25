@@ -15,9 +15,6 @@
     <ClCompile Include="core\BaiduMapHandle.cpp">
       <Filter>core</Filter>
     </ClCompile>
-    <ClCompile Include="src\JSBrige.cpp">
-      <Filter>BaiduMap</Filter>
-    </ClCompile>
     <ClCompile Include="src\BaiduMapView.cpp">
       <Filter>BaiduMap</Filter>
     </ClCompile>
@@ -37,9 +34,6 @@
   <ItemGroup>
     <QtMoc Include="core\BaiduMapHandle.h">
       <Filter>core</Filter>
-    </QtMoc>
-    <QtMoc Include="src\JSBrige.h">
-      <Filter>BaiduMap</Filter>
     </QtMoc>
     <QtMoc Include="src\BaiduMapView.h">
       <Filter>BaiduMap</Filter>

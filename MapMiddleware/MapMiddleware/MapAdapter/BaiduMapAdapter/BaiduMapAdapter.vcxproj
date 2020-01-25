@@ -16,11 +16,7 @@
     <ClCompile Include="core\BaiduMapLayer.cpp" />
     <ClCompile Include="core\MapItem\BaiduMapItem.cpp" />
     <ClCompile Include="core\MapItem\BaiduPointMapItem.cpp" />
-    <ClCompile Include="src\JSBrige.cpp" />
     <ClCompile Include="src\BaiduMapView.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="src\JSBrige.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\BaiduMapView.h">
@@ -95,7 +91,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5WebEngined.lib;Qt5WebEngineCored.lib;Qt5WebEngineWidgetsd.lib;Qt5Widgetsd.lib;Qt5WebChanneld.lib;%(AdditionalDependencies)</AdditionalDependencies>
