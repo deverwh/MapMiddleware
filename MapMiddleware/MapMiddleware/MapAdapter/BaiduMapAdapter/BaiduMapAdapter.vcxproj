@@ -31,6 +31,7 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config\BaiduMapConfig.h" />
     <ClInclude Include="core\BaiduMap_Gloable.h" />
     <ClInclude Include="core\MapItem\BaiduMapItem.h" />
     <ClInclude Include="core\MapItem\BaiduPointMapItem.h" />

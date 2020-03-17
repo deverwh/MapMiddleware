@@ -10,6 +10,9 @@
     <Filter Include="core\MapItem">
       <UniqueIdentifier>{20e88278-4ba3-4b2f-988c-2ff192556818}</UniqueIdentifier>
     </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{b9047142-fd62-4ca6-92f4-ff04de0a5a4c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\BaiduMapHandle.cpp">
@@ -54,6 +57,9 @@
     </ClInclude>
     <ClInclude Include="core\MapItem\BaiduMapItem.h">
       <Filter>core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BaiduMapConfig.h">
+      <Filter>config</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

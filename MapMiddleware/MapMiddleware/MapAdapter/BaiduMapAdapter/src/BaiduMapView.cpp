@@ -10,7 +10,7 @@ BaiduMapView::BaiduMapView(QWidget *parent)
 	this->page()->setWebChannel(channel);
 	this->settings()->setDefaultTextEncoding("UTF-8");
 
-	QString strMapPath = "http://127.0.0.1/";
+	QString strMapPath = "http://www.deverat.com/"; // 此地址是我的云服务器，托管了百度的离线地图，可以通过http://www.deverat.com/baidumap访问FTP内容，应该可以下载，注tiles文件很多
 	strMapPath += "baidumap/main.html";
 	QUrl url(strMapPath);
 	this->page()->load(url);
