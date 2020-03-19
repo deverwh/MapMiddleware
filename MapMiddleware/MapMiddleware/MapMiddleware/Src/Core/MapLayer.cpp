@@ -44,6 +44,7 @@ void MapLayer::addMapItem(MapItem *mapItem)
 	if (mapLayer == nullptr)
 	{
 		mapItem->setMapLayer(this);
+		m_mapItems.insert(mapItem->getId(), mapItem);
 	}
 	else
 	{

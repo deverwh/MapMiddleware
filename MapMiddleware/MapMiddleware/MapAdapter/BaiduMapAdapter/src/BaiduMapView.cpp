@@ -22,7 +22,14 @@ BaiduMapView::BaiduMapView(QWidget *parent)
 BaiduMapView::~BaiduMapView()
 {
 	this->page()->webChannel()->deregisterObject(this);
+}
 
+void BaiduMapView::addPoint(const QString &poingJson)
+{
+	QString code = QString("var point = JSON.parse(\"%1\");alert(point);").arg(poingJson);
+	this->page()->runJavaScript(code);
+
+	emit sendAddPointMessage(poingJson);
 }
 
 void BaiduMapView::mouseMoved(qreal longitude, qreal latitude)

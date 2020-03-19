@@ -15,7 +15,6 @@ MapItem::MapItem(MapItemType::Type type)
 	if (factory)
 	{
 		d_ptr = factory->createMapItem(type);
-		d_ptr->setMapLayer(m_mapLayer->d_func());
 	}
 	else
 	{

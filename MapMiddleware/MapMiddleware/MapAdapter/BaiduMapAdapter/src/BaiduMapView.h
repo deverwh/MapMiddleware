@@ -23,8 +23,14 @@ public:
 	BaiduMapView(QWidget *parent = Q_NULLPTR);
 	~BaiduMapView();
 
+	void addPoint(const QString &poingJson);
+
 signals:
+	// JS发送到Qt
 	void signalMouseMoved(qreal longitude, qreal latitude);
+
+	// Qt发送到JS
+	void sendAddPointMessage(const QString &poingJson);
 
 public slots:
 	void mouseMoved(qreal, qreal);

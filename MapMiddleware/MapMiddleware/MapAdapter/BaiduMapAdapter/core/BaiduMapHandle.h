@@ -37,6 +37,8 @@ public:
 	// ÉèÖÃµØÍ¼×´Ì¬
 	virtual void setMapState(MapHandleState::State state) override;
 
+	BaiduMapView *baiduMap() const { return m_baiduMap; }
+
 private:
 	BaiduMapView *	m_baiduMap = nullptr;
 };
