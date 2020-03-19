@@ -26,32 +26,17 @@ public:
 	AbstractMapLayer(AbstractMapHandle* mapHandle, const QString& name = QString());
 	virtual ~AbstractMapLayer();
 
-	//************************************
-	// 方法: mapHandle
-	// 全名: AbstractMapLayer::mapHandle
-	// 访控: public 
-	// 返回: AbstractMapHandle*
-	// 简介: 获取图层所在的地图实例
-	//************************************
-	inline AbstractMapHandle* mapHandle() const { return m_mapHandle; }
+	virtual void update() = 0;
 
-	//************************************
-	// 方法: index
-	// 全名: AbstractMapLayer::index
-	// 访控: public 
-	// 返回: int
-	// 简介: 获取图层索引
-	//************************************
-	inline int index() const { return m_index; }
+	// 获取图层所在的地图实例
+	inline AbstractMapHandle* getMapHandle() const { return m_mapHandle; }
 
+	// 获取图层索引
+	inline int getIndex() const { return m_index; }
+
+	// 获取图层名称
 	//************************************
-	// 方法: name
-	// 全名: AbstractMapLayer::name
-	// 访控: public 
-	// 返回: const QString&
-	// 简介: 获取图层名称
-	//************************************
-	inline const QString& name() const { return m_name; }
+	inline const QString& getName() const { return m_name; }
 
 protected:
 	AbstractMapHandle*				m_mapHandle = nullptr;	// 地图实例

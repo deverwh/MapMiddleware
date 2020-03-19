@@ -1,14 +1,14 @@
 /*!
  * \文件 AbstractMapHandle.h
- * \日期 2020/01/06 9:57
+ * \日期 2020/03/19 21:07
  *
- * \作者 wanghao
- * 联系: wanghao@swiet.com
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
  *
  * \简介 地图实例适配器接口
  *
  *
- * \更改记录 2020.1.6 新建
+ * \记录 2020/03/19 21:07 新建
 */
 
 #pragma once
@@ -34,7 +34,7 @@ public:
 	virtual void addMapLayer(AbstractMapLayer *mapLayer) = 0;
 
 	// 删除图层，删除图层会连带删除图层上的所有图元
-	virtual void removeMapLayer(int mapLayerIndex) = 0;
+	virtual void removeMapLayerByIndex(int mapLayerIndex) = 0;
 
 	// 设置经纬网格显隐, true，隐藏，false，显示
 	virtual void setGridHidden(bool hidden) = 0;

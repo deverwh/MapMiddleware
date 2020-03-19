@@ -1,14 +1,14 @@
 /*!
  * \文件 MapMiddlewareConfig.h
- * \日期 2019/12/31 19:52
+ * \日期 2020/03/19 21:09
  *
- * \作者 wanghao
- * 联系: wanghao@swiet.com
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
  *
  * \简介 地图平台配置
  *
  *
- * \更改：2019.12.31 新建
+ * \记录 2020/03/19 21:09 新建
 */
 
 #pragma once

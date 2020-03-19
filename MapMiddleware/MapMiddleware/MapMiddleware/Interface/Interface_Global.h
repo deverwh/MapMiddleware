@@ -1,14 +1,14 @@
 /*!
-* \文件 Interface_Global.h
-* \日期 2020/01/07 17:48
-*
-* \作者 wanghao
-* 联系: wanghao@swiet.com
-*
-* \简介 通用定义
-*
-*
-* \更改记录 2020.1.7 新建
+ * \文件 Interface_Global.h
+ * \日期 2020/03/19 21:06
+ *
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
+ *
+ * \简介 通用定义
+ *
+ *
+ * \记录 2020/03/19 21:06 新建
 */
 
 #pragma once

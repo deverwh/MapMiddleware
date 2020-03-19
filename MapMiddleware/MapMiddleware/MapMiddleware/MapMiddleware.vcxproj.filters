@@ -186,6 +186,9 @@
     <ClInclude Include="Interface\Core\MapItem\AbstractLineMapItem.h">
       <Filter>interface\core\MapItem</Filter>
     </ClInclude>
+    <ClInclude Include="Interface\Core\MapItem\EmptyMapItem.h">
+      <Filter>interface\core\MapItem</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="config.ini">

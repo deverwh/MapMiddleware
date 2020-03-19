@@ -17,8 +17,8 @@ MainWidget::MainWidget(QWidget *parent)
 	auto mapHandle = new MapHandle(this);
 	auto mapLayer = new MapLayer(mapHandle);
 	mapHandle->addMapLayer(mapLayer);
-	auto layerName = mapLayer->name();
-	int index = mapLayer->index();
+	auto layerName = mapLayer->getName();
+	int index = mapLayer->getIndex();
 
 	QGridLayout *layout = new QGridLayout;
 	layout->setMargin(0);

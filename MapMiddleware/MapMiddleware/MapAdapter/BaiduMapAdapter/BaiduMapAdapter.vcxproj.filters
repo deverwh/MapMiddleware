@@ -49,9 +49,6 @@
     <ClInclude Include="core\BaiduMapLayer.h">
       <Filter>core</Filter>
     </ClInclude>
-    <ClInclude Include="core\BaiduMap_Gloable.h">
-      <Filter>core</Filter>
-    </ClInclude>
     <ClInclude Include="core\MapItem\BaiduPointMapItem.h">
       <Filter>core\MapItem</Filter>
     </ClInclude>
@@ -60,6 +57,9 @@
     </ClInclude>
     <ClInclude Include="config\BaiduMapConfig.h">
       <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BaiduMap_Gloable.h">
+      <Filter>core\MapItem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

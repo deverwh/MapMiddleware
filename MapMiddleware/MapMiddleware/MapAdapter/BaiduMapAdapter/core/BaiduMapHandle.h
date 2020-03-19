@@ -1,6 +1,6 @@
 /*!
  * \文件 BaiduMapHandle.h
- * \日期 2020/01/23 20:45
+ * \日期 2020/03/19 21:13
  *
  * \作者 deverwh
  * 	联系 deverwh@outlook.com
@@ -8,7 +8,7 @@
  * \简介 百度地图实例
  *
  *
- * \记录 
+ * \记录 2020/03/19 21:13 新建
 */
 
 #pragma once
@@ -29,7 +29,7 @@ public:
 	virtual void addMapLayer(AbstractMapLayer *mapLayer) override;
 
 	// 删除图层，删除图层会连带删除图层上的所有图元
-	virtual void removeMapLayer(int mapLayerIndex) override;
+	virtual void removeMapLayerByIndex(int mapLayerIndex) override;
 
 	// 设置经纬网格显隐, true，隐藏，false，显示
 	virtual void setGridHidden(bool hidden) override;

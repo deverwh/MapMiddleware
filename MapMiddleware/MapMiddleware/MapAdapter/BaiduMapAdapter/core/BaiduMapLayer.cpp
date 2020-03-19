@@ -5,3 +5,8 @@ BaiduMapLayer::BaiduMapLayer(AbstractMapHandle* mapHandle, const QString& name /
 {
 
 }
+
+void BaiduMapLayer::update()
+{
+
+}

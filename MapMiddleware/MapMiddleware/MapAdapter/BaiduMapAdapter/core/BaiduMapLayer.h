@@ -19,4 +19,7 @@ class BaiduMapLayer : public AbstractMapLayer
 {
 public:
 	BaiduMapLayer(AbstractMapHandle* mapHandle, const QString& name = QString());
+
+protected:
+	virtual void update() override;
 };

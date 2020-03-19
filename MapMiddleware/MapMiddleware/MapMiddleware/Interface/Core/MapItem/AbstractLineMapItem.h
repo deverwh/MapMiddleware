@@ -1,14 +1,14 @@
 /*!
-* \文件 AbstractPointMapItem.h
-* \日期 2020/01/08 17:33
-*
-* \作者 wanghao
-* 联系: wanghao@swiet.com
-*
-* \简介 抽象点图元基类
-*
-*
-* \更改记录 2020.1.8 新建
+ * \文件 AbstractLineMapItem.h
+ * \日期 2020/03/19 21:05
+ *
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
+ *
+ * \简介 抽象线图元基类
+ *
+ *
+ * \记录 2020/03/19 21:05 新建
 */
 
 #pragma once

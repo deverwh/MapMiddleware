@@ -1,6 +1,6 @@
 /*!
  * \文件 BaiduMapFactory.h
- * \日期 2020/01/23 21:03
+ * \日期 2020/03/19 21:14
  *
  * \作者 deverwh
  * 	联系 deverwh@outlook.com
@@ -8,7 +8,7 @@
  * \简介 百度地图工厂
  *
  *
- * \记录 2020.01.23 新建
+ * \记录 2020/03/19 21:14 新建
 */
 
 #pragma once
@@ -18,8 +18,8 @@
 class BaiduMapFactory : public QObject, public IMapFactory
 {
 	Q_OBJECT
-		Q_PLUGIN_METADATA(IID "interface.MapFactory")
-		Q_INTERFACES(IMapFactory)
+	Q_PLUGIN_METADATA(IID "interface.MapFactory")
+	Q_INTERFACES(IMapFactory)
 
 public:
 	// 获取地图名称

@@ -1,14 +1,14 @@
 /*!
  * \文件 Map_Global.h
- * \日期 2020/01/03 17:48
+ * \日期 2020/03/19 21:08
  *
- * \作者 wanghao
- * 联系: wanghao@swiet.com
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
  *
  * \简介 通用定义
  *
  *
- * \更改记录 2020.1.3 新建
+ * \记录 2020/03/19 21:08 新建
 */
 
 #pragma once

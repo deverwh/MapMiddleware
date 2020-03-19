@@ -1,14 +1,14 @@
 /*!
  * \文件 IMapFactory.h
- * \日期 2020/01/06 15:52
+ * \日期 2020/03/19 21:06
  *
- * \作者 wanghao
- * 联系: wanghao@swiet.com
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
  *
  * \简介 抽象地图工厂
  *
  *
- * \更改记录 2020.1.6 新建
+ * \记录 2020/03/19 21:06 新建
 */
 
 #pragma once

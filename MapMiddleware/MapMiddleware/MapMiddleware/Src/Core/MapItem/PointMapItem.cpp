@@ -2,14 +2,14 @@
 #include "MapHandle.h"
 #include "AbstractPointMapItem.h"
 
-PointMapItem::PointMapItem(MapLayer *mapLayer)
-: MapItem(mapLayer, MapItemType::Point)
+PointMapItem::PointMapItem()
+: MapItem(MapItemType::Point)
 {
 
 }
 
-PointMapItem::PointMapItem(MapLayer *mapLayer, const QPointF &pos, int size /* = 1 */, const QColor &color /* = QColor(Qt::red) */)
-: MapItem(mapLayer, MapItemType::Point)
+PointMapItem::PointMapItem(const QPointF &pos, int size /* = 1 */, const QColor &color /* = QColor(Qt::red) */)
+: MapItem(MapItemType::Point)
 {
 	setPos(pos);
 	setSize(size);

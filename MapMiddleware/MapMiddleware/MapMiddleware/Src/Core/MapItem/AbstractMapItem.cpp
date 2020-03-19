@@ -14,26 +14,7 @@ AbstractMapItem::~AbstractMapItem()
 
 }
 
-void AbstractMapItem::draw()
+void AbstractMapItem::update(bool autoRedraw /*= true*/)
 {
-	if (m_isDraw)
-	{
-		onMoveTo(m_pos);
-	}
-	else
-	{
-		onDraw();
-		m_isDraw = true;
-	}
-}
-
-void AbstractMapItem::moveTo(const QPointF &newPos)
-{
-	onMoveTo(newPos);
-}
-
-void AbstractMapItem::remove()
-{
-	onRemove();
-	m_isDraw = false;
+	onUpdate(autoRedraw);
 }

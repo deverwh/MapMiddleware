@@ -6,18 +6,13 @@ BaiduPointMapItem::BaiduPointMapItem()
 {
 }
 
-BaiduPointMapItem::~BaiduPointMapItem()
+void BaiduPointMapItem::onUpdate(bool autoRedraw)
 {
-}
+	// 绘制
 
-void BaiduPointMapItem::onDraw()
-{
-}
-
-void BaiduPointMapItem::onMoveTo(const QPointF &newPos)
-{
-}
-
-void BaiduPointMapItem::onRemove()
-{
+	// 自动刷新
+	if (autoRedraw)
+	{
+		this->m_mapLayer->update();
+	}
 }

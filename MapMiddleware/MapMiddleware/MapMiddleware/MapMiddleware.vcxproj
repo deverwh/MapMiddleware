@@ -109,6 +109,7 @@
     <ClInclude Include="Interface\Core\MapItem\AbstractLineMapItem.h" />
     <ClInclude Include="Interface\Core\MapItem\AbstractMapItem.h" />
     <ClInclude Include="Interface\Core\MapItem\AbstractPointMapItem.h" />
+    <ClInclude Include="Interface\Core\MapItem\EmptyMapItem.h" />
     <ClInclude Include="Interface\Interface_Global.h" />
     <ClInclude Include="Src\Core\MapFactoryLoader.h" />
     <CustomBuild Include="Include\Core\MapItem\MapItem.h">

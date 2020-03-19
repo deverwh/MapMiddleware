@@ -1,15 +1,14 @@
 /*!
  * \文件 MapFactoryLoader.h
- * \日期 2020/01/07 8:39
+ * \日期 2020/03/19 21:08
  *
- * \作者 wanghao
- * 联系: wanghao@swiet.com
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
  *
  * \简介 地图工厂插件加载器
  *		单例
  *
- *
- * \更改记录
+ * \记录 2020/03/19 21:08 新建
 */
 
 #pragma once

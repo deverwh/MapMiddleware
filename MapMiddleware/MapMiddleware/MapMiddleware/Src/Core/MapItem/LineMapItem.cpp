@@ -2,14 +2,14 @@
 #include "MapHandle.h"
 #include "AbstractLineMapItem.h"
 
-LineMapItem::LineMapItem(MapLayer *mapLayer)
-: MapItem(mapLayer, MapItemType::Line)
+LineMapItem::LineMapItem()
+: MapItem(MapItemType::Line)
 {
 
 }
 
-LineMapItem::LineMapItem(MapLayer *mapLayer, const QPointF &startPos, const QPointF& endPos)
-: MapItem(mapLayer, MapItemType::Line)
+LineMapItem::LineMapItem(const QPointF &startPos, const QPointF& endPos)
+: MapItem(MapItemType::Line)
 {
 	setStartPos(startPos);
 	setEndPos(endPos);

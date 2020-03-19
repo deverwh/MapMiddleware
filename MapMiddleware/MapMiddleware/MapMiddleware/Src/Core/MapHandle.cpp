@@ -29,7 +29,7 @@ MapHandle::MapHandle(QWidget *parent /* = nullptr */)
 MapHandle::~MapHandle()
 {
 	// 清理图层
-	for (auto mapLayer : m_mapLayers)
+	for (auto &mapLayer : m_mapLayers)
 	{
 		delete mapLayer;
 	}
@@ -47,30 +47,31 @@ void MapHandle::setState(MapHandleState::State state)
 void MapHandle::addMapLayer(MapLayer *mapLayer)
 {
 	// 如果图层不存在，则添加到图层
-	if (m_mapLayers.find(mapLayer->index()) == m_mapLayers.end())
+	if (m_mapLayers.find(mapLayer->getIndex()) == m_mapLayers.end())
 	{
-		m_mapLayers.insert(mapLayer->index(), mapLayer);
+		m_mapLayers.insert(mapLayer->getIndex(), mapLayer);
 	}
 	d_ptr->addMapLayer(mapLayer->d_func());
 }
 
-MapLayer* MapHandle::mapLayer(int mapLayerIndex)
+MapLayer* MapHandle::getMapLayerByIndex(int mapLayerIndex)
 {
 	return m_mapLayers.value(mapLayerIndex);
 }
 
-void MapHandle::removeMapLayer(int mapLayerIndex)
+void MapHandle::removeMapLayerByIndex(int mapLayerIndex)
 {
 	auto mapLayer = m_mapLayers.value(mapLayerIndex);
 	if (mapLayer != nullptr)
 	{
-		d_ptr->removeMapLayer(mapLayerIndex);
+		d_ptr->removeMapLayerByIndex(mapLayerIndex);
 		m_mapLayers.remove(mapLayerIndex);
 		delete mapLayer;
 	}
 }
 
-bool MapHandle::isValid() const
+void MapHandle::removeMapLayer(MapLayer *mapLayer)
 {
-	return d_ptr != nullptr;
+	if (mapLayer == nullptr) return;
+	this->removeMapLayerByIndex(mapLayer->getIndex());
 }

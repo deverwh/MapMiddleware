@@ -26,7 +26,7 @@ void BaiduMapHandle::addMapLayer(AbstractMapLayer *mapLayer)
 
 }
 
-void BaiduMapHandle::removeMapLayer(int mapLayerIndex)
+void BaiduMapHandle::removeMapLayerByIndex(int mapLayerIndex)
 {
 
 }

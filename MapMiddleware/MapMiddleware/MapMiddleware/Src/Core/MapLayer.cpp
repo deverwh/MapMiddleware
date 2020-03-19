@@ -17,7 +17,7 @@ MapLayer::MapLayer(MapHandle* mapHandle, const QString &name /* = QString() */)
 MapLayer::~MapLayer()
 {
 	// 清除图层上的所有图元
-	for (auto mapItem : m_mapItems)
+	for (auto &mapItem : m_mapItems)
 	{
 		delete mapItem;
 	}
@@ -27,36 +27,48 @@ MapLayer::~MapLayer()
 	d_ptr = nullptr;
 }
 
+void MapLayer::update()
+{
+	for (const auto &mapItem : m_mapItems)
+	{
+		mapItem->update(false);
+	}
+	d_ptr->update();
+}
+
 void MapLayer::addMapItem(MapItem *mapItem)
 {
-	// 如果图元的当前图层不是本图层
-	if (mapItem->m_mapLayer != this)
-	{
-		// 先将图元从它所在的当前图层删除
-		mapItem->remove(); // 清除地图显示
-		mapItem->m_mapLayer->m_mapItems.remove(mapItem->id());
-		mapItem->setMapLayer(this);
-	}
+	if (mapItem == nullptr) return;
 
-	auto item = m_mapItems.find(mapItem->id());
-	// 图层上不存在此图元
-	if (item == m_mapItems.end())
+	auto mapLayer = mapItem->getMapLayer();
+	if (mapLayer == nullptr)
 	{
-		m_mapItems.insert(mapItem->id(), mapItem);
-		mapItem->d_func()->draw();
+		mapItem->setMapLayer(this);
 	}
 	else
 	{
-		item.value()->d_func()->moveTo(mapItem->pos());
+		if (mapLayer != this)
+		{
+			// 先将图元从它所在的当前图层删除
+			mapItem->getMapLayer()->m_mapItems.remove(mapItem->getId());
+			m_mapItems.insert(mapItem->getId(), mapItem);
+			mapItem->setMapLayer(this);
+		}
 	}
 }
 
-MapItem * MapLayer::mapItem(const QString &mapItemId) const
+MapItem * MapLayer::getMapItemById(const QString &mapItemId) const
 {
 	return m_mapItems.value(mapItemId);
 }
 
-void MapLayer::removeMapItem(const QString& mapItemId)
+void MapLayer::removeMapItem(MapItem *mapItem)
+{
+	if (mapItem == nullptr) return;
+	this->removeMapItemById(mapItem->getId());
+}
+
+void MapLayer::removeMapItemById(const QString& mapItemId)
 {
 	auto id = mapItemId;
 	auto mapItem = m_mapItems.value(id);
@@ -67,13 +79,13 @@ void MapLayer::removeMapItem(const QString& mapItemId)
 	}
 }
 
-int MapLayer::index() const
+int MapLayer::getIndex() const
 {
-	return d_ptr->index();
+	return d_ptr->getIndex();
 }
 
-const QString& MapLayer::name() const
+const QString& MapLayer::getName() const
 {
-	return d_ptr->name();
+	return d_ptr->getName();
 }
 

@@ -1,14 +1,14 @@
 /*!
  * \文件 PointMapItem.h
- * \日期 2020/01/04 12:50
+ * \日期 2020/03/19 21:08
  *
- * \作者 wanghao
- * 联系: wanghao@swiet.com
+ * \作者 deverwh
+ * 	联系 deverwh@outlook.com
  *
  * \简介 点图元
  *
  *
- * \更改记录 2020.1.4 新建
+ * \记录 2020/03/19 21:08 新建
 */
 
 #pragma once
@@ -19,8 +19,8 @@
 class MAP_EXPORT PointMapItem : public MapItem
 {
 public:
-	PointMapItem(MapLayer *mapLayer);
-	PointMapItem(MapLayer *mapLayer, const QPointF &pos, int size = 1, const QColor &color = QColor(Qt::red));
+	PointMapItem();
+	PointMapItem(const QPointF &pos, int size = 1, const QColor &color = QColor(Qt::red));
 
 	void setPos(const QPointF &pos);
 	void setSize(int size);
