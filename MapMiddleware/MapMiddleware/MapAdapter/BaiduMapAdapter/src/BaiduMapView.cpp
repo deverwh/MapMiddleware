@@ -10,8 +10,7 @@ BaiduMapView::BaiduMapView(QWidget *parent)
 	this->page()->setWebChannel(channel);
 	this->settings()->setDefaultTextEncoding("UTF-8");
 
-	QString strMapPath = "http://www.deverat.com/"; // 此地址是我的云服务器，托管了百度的离线地图，可以通过http://www.deverat.com/baidumap访问FTP内容，应该可以下载，注tiles文件很多
-	strMapPath += "baidumap/main.html";
+	QString strMapPath = "http://www.deverat.com/baidumap/main.html"; // 此地址是我的云服务器，托管了百度的离线地图，可以通过http://www.deverat.com/baidumap访问FTP内容，应该可以下载，注tiles文件很多
 	QUrl url(strMapPath);
 	this->page()->load(url);
 	this->triggerPageAction(QWebEnginePage::Reload, true);
@@ -26,10 +25,12 @@ BaiduMapView::~BaiduMapView()
 
 void BaiduMapView::addPoint(const QString &poingJson)
 {
-	QString code = QString("var point = JSON.parse(\"%1\");alert(point);").arg(poingJson);
-	this->page()->runJavaScript(code);
-
 	emit sendAddPointMessage(poingJson);
+}
+
+void BaiduMapView::removeMapItem(const QString &id)
+{
+	emit removeOverlay(id);
 }
 
 void BaiduMapView::mouseMoved(qreal longitude, qreal latitude)

@@ -28,7 +28,10 @@ MainWidget::MainWidget(QWidget *parent)
 
 	qsrand(QDateTime::currentMSecsSinceEpoch());
 
-	connect(mapHandle, &MapHandle::mouseMoved, this, [&, mapLayer, mapHandle](qreal longitude, qreal latitude)
+	auto point = new PointMapItem(QPointF(0, 0), 10);
+	mapLayer->addMapItem(point);
+
+	connect(mapHandle, &MapHandle::mouseMoved, this, [&, point, mapLayer, mapHandle](qreal longitude, qreal latitude)
 	{
 		static int size = 1;
 
@@ -36,9 +39,10 @@ MainWidget::MainWidget(QWidget *parent)
 		int g = qrand() % 255;
 		int b = qrand() % 255;
 
-		auto point = new PointMapItem(QPointF(longitude, latitude), size++, QColor(r, g, b));
-		mapLayer->addMapItem(point);
+		point->setPos(QPointF(longitude, latitude));
+		point->setSize(size++);
 		mapLayer->update();
+
 
 		//auto line = new LineMapItem(mapLayer, QPointF(longitude, latitude), QPointF(longitude + 1, latitude + 1));
 		//line->draw();

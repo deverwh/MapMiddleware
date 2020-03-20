@@ -25,12 +25,15 @@ public:
 
 	void addPoint(const QString &poingJson);
 
+	void removeMapItem(const QString &id);
+
 signals:
 	// JS发送到Qt
 	void signalMouseMoved(qreal longitude, qreal latitude);
 
 	// Qt发送到JS
 	void sendAddPointMessage(const QString &poingJson);
+	void removeOverlay(const QString &id);
 
 public slots:
 	void mouseMoved(qreal, qreal);

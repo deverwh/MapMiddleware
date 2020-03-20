@@ -23,6 +23,7 @@ public:
 	PointMapItem(const QPointF &pos, int size = 1, const QColor &color = QColor(Qt::red));
 
 	void setPos(const QPointF &pos);
+	// 大小1-10，单位km
 	void setSize(int size);
 	void setColor(const QColor &color);
 

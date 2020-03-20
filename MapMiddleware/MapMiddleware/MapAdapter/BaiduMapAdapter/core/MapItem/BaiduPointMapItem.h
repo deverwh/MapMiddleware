@@ -20,6 +20,7 @@ class BaiduPointMapItem : public BaiduMapItem, public AbstractPointMapItem
 {
 public:
 	BaiduPointMapItem();
+	~BaiduPointMapItem();
 
 protected:
 	virtual void onUpdate(bool autoRedraw) override;

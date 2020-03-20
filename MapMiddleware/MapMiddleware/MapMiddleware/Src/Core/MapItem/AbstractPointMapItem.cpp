@@ -2,7 +2,10 @@
 
 void AbstractPointMapItem::setSize(int size)
 {
-	m_size = size;
+	if (size <= 10 && size > 0)
+	{
+		m_size = size;
+	}
 }
 
 void AbstractPointMapItem::setColor(const QColor &color)

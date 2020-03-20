@@ -17,4 +17,7 @@ class BaiduMapItem
 {
 public:
 	BaiduMapItem();
+
+protected:
+	bool m_isDraw = false;
 };
