@@ -6,7 +6,7 @@
 
 QString BaiduMapFactory::mapName()
 {
-	return BAIDUMAP_NAME;
+	return MAP_NAME;
 }
 
 AbstractMapHandle * BaiduMapFactory::createMapHandle()

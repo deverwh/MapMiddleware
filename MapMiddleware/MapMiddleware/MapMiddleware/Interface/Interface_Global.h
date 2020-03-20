@@ -18,3 +18,6 @@
 #else // _BUILDING_INTERFACE
 #define INTERFACE_EXPORT __declspec(dllimport)
 #endif // _BUILDING_INTERFACE
+
+// 地图中间件目录
+#define MapMiddlewareDir "./MapMiddleware"

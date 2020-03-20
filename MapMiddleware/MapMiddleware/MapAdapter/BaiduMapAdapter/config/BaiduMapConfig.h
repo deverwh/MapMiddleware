@@ -18,5 +18,6 @@
 class BaiduMapConfig
 {
 public:
+	// 获取地图服务器地址
 	static QString mapServer();
 };

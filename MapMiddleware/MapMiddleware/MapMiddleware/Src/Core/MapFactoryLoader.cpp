@@ -1,5 +1,6 @@
 #include "MapFactoryLoader.h"
 #include "MapMiddlewareConfig.h"
+#include "Interface_Global.h"
 #include <QDir>
 #include <QCoreApplication>
 #include <QPluginLoader>
@@ -24,7 +25,7 @@ IMapFactory * MapFactoryLoader::mapFactory()
 	// 通过Qt插件框架获取地图实例接口
 	// 插件目录
 	QDir mapPluginDir = QDir(qApp->applicationDirPath());
-	if (mapPluginDir.cd("MapMiddleware")) // 切换到特定地图插件目录
+	if (mapPluginDir.cd(MapMiddlewareDir)) // 切换到特定地图插件目录
 	{
 		bool isLoaded = false;
 		// 遍历插件目录获取特定地图工厂

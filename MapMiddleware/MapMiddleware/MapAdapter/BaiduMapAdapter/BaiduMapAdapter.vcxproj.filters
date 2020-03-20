@@ -33,6 +33,9 @@
     <ClCompile Include="core\MapItem\BaiduMapItem.cpp">
       <Filter>core\MapItem</Filter>
     </ClCompile>
+    <ClCompile Include="config\BaiduMapConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="core\BaiduMapHandle.h">
@@ -59,7 +62,7 @@
       <Filter>config</Filter>
     </ClInclude>
     <ClInclude Include="core\BaiduMap_Gloable.h">
-      <Filter>core\MapItem</Filter>
+      <Filter>core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
