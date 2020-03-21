@@ -257,3 +257,7 @@ temp
 /MapMiddleware/doc
 /MapMiddleware/MapMiddleware/MapAdapter/GuoYaoMapAdapter
 /MapMiddleware/MapMiddleware/MapAdapter/CETCMapAdapter
+/MapMiddleware/bin/Debug/MapMiddleware/Baidu/BaiduMapAdapter.lib
+/MapMiddleware/bin/Debug/MapMiddleware/Baidu/BaiduMapAdapter.exp
+/MapMiddleware/bin/Debug/MapMiddleware.lib
+/MapMiddleware/bin/Debug/MapMiddleware.exp
