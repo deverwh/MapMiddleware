@@ -12,7 +12,7 @@ BaiduMapView::BaiduMapView(QWidget *parent)
 	this->page()->setWebChannel(channel);
 	this->settings()->setDefaultTextEncoding("UTF-8");
 
-	QString strMapPath = BaiduMapConfig::mapServer();
+	QString strMapPath = QString("file:///%1").arg(BaiduMapConfig::mapServer());
 	QUrl url(strMapPath);
 	this->page()->load(url);
 	this->triggerPageAction(QWebEnginePage::Reload, true);
