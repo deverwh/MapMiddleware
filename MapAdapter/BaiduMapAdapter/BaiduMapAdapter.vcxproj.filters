@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{aad9485e-2a72-48d0-addf-8e5371b69938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaiduMap">
+      <UniqueIdentifier>{608b000e-7b53-46fd-b3c3-4182f43e7c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\MapItem">
+      <UniqueIdentifier>{20e88278-4ba3-4b2f-988c-2ff192556818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{b9047142-fd62-4ca6-92f4-ff04de0a5a4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\BaiduMapHandle.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaiduMapView.cpp">
+      <Filter>BaiduMap</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BaiduMapFactory.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BaiduMapLayer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\MapItem\BaiduPointMapItem.cpp">
+      <Filter>core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="core\MapItem\BaiduMapItem.cpp">
+      <Filter>core\MapItem</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BaiduMapConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="core\BaiduMapHandle.h">
+      <Filter>core</Filter>
+    </QtMoc>
+    <QtMoc Include="src\BaiduMapView.h">
+      <Filter>BaiduMap</Filter>
+    </QtMoc>
+    <QtMoc Include="core\BaiduMapFactory.h">
+      <Filter>core</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\BaiduMapLayer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\MapItem\BaiduPointMapItem.h">
+      <Filter>core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="core\MapItem\BaiduMapItem.h">
+      <Filter>core\MapItem</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BaiduMapConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BaiduMap_Gloable.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.ini">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+</Project>
