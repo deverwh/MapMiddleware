@@ -63,7 +63,7 @@
     <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\MapMiddleware\Baidu</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\MapMiddleware\BaiduMap</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
