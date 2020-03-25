@@ -42,6 +42,9 @@ public:
 	// 设置地图状态，子类实现需要先调用父类方法
 	virtual void setMapState(MapHandleState::State state) = 0;
 
+	virtual void zoomIn() = 0;
+	virtual void zoomOut() = 0;
+
 protected:
 	MapHandleState::State		m_mapState = MapHandleState::Arrow;
 

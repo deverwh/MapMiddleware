@@ -75,3 +75,14 @@ void MapHandle::removeMapLayer(MapLayer *mapLayer)
 	if (mapLayer == nullptr) return;
 	this->removeMapLayerByIndex(mapLayer->getIndex());
 }
+
+void MapHandle::zoomIn()
+{
+	d_ptr->zoomIn();
+}
+
+void MapHandle::zoomOut()
+{
+	d_ptr->zoomOut();
+}
+

@@ -36,6 +36,8 @@ public:
 
 	// ÉèÖÃµØÍ¼×´Ì¬
 	virtual void setMapState(MapHandleState::State state) override;
+	virtual void zoomIn() override;
+	virtual void zoomOut() override;
 
 	BaiduMapView *baiduMap() const { return m_baiduMap; }
 

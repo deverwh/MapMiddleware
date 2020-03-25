@@ -30,7 +30,7 @@
             BMAP_NORMAL_MAP,
             BMAP_HYBRID_MAP
         ]}));	  
-	map.setCurrentCity("南京");          // 设置地图显示的城市 此项是必须设置的
+	map.setCurrentCity("成都");          // 设置地图显示的城市 此项是必须设置的
 	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
 
 
@@ -94,10 +94,19 @@ function addPoint(pointJson)
     map.addOverlay(circle);
     overlayList[pointJson.id] = circle;
 }
-	// QT交互********************************************* 
-	new QWebChannel(qt.webChannelTransport, function(channel) {
-        window.bridge = channel.objects.bridge;  //bridge_name 与QT 中一致
-   });
+
+function zoomIn(){
+	map.zoomIn();
+}
+
+function zoomOut(){
+	map.zoomOut();
+}
+
+// QT交互********************************************* 
+new QWebChannel(qt.webChannelTransport, function(channel) {
+	window.bridge = channel.objects.bridge;  //bridge_name 与QT 中一致
+});
 
 //********************************************* end
 </script>

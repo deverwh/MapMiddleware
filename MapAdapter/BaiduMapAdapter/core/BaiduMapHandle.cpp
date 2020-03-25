@@ -41,3 +41,13 @@ void BaiduMapHandle::setMapState(MapHandleState::State state)
 	AbstractMapHandle::setMapState(state);
 	// TODO
 }
+
+void BaiduMapHandle::zoomIn()
+{
+	m_baiduMap->zoomIn();
+}
+
+void BaiduMapHandle::zoomOut()
+{
+	m_baiduMap->zoomOut();
+}

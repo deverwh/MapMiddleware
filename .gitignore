@@ -261,3 +261,8 @@ temp
 /MapMiddleware/bin/Debug/MapMiddleware/Baidu/BaiduMapAdapter.exp
 /MapMiddleware/bin/Debug/MapMiddleware.lib
 /MapMiddleware/bin/Debug/MapMiddleware.exp
+/bin/lib
+/bin/Debug/MapMiddleware.lib
+/bin/Debug/MapMiddleware.exp
+/bin/Debug/MapMiddleware/Baidu/BaiduMapAdapter.lib
+/bin/Debug/MapMiddleware/Baidu/BaiduMapAdapter.exp

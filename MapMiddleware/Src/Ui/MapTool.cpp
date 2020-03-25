@@ -53,11 +53,13 @@ void MapTool::on_roamingPushButton_clicked()
 void MapTool::on_zoomInPushButton_clicked()
 {
 	m_mapHandle->setMapState(MapHandleState::ZoomIn);
+	m_mapHandle->zoomIn();
 }
 
 void MapTool::on_zoomOutPushButton_clicked()
 {
 	m_mapHandle->setMapState(MapHandleState::ZoonOut);
+	m_mapHandle->zoomOut();
 }
 
 void MapTool::on_buttonGroup_buttonClicked(QAbstractButton * button)

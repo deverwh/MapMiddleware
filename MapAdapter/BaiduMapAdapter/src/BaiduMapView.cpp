@@ -25,6 +25,18 @@ BaiduMapView::~BaiduMapView()
 	this->page()->webChannel()->deregisterObject(this);
 }
 
+void BaiduMapView::zoomIn()
+{
+	QString cmd = QString("zoomIn()");
+	this->page()->runJavaScript(cmd);
+}
+
+void BaiduMapView::zoomOut()
+{
+	QString cmd = QString("zoomOut()");
+	this->page()->runJavaScript(cmd);
+}
+
 void BaiduMapView::addPoint(const QString &poingJson)
 {
 	QString cmd = QString("addPoint(%1)")

@@ -43,6 +43,12 @@ public:
 	void removeMapLayer(MapLayer *mapLayer);
 	void removeMapLayerByIndex(int mapLayerIndex);
 
+	// ∑≈¥Û
+	void zoomIn();
+
+	// Àı–°
+	void zoomOut();
+
 signals:
 	void mouseMoved(qreal longitude, qreal latitude);
 	void mousePressed(qreal longitude, qreal latitude, Qt::MouseButton button);

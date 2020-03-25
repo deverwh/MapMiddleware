@@ -23,6 +23,9 @@ public:
 	BaiduMapView(QWidget *parent = Q_NULLPTR);
 	~BaiduMapView();
 
+	void zoomIn();
+	void zoomOut();
+
 	void addPoint(const QString &poingJson);
 
 	void removeMapItem(const QString &id);
